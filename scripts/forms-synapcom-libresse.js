@@ -26,10 +26,10 @@ $(document).ready(function() {
         event.preventDefault();
 
         // verifying inputs
-        if($('#contact_name').hasClass('invalid')){
-            alert('Por favor, insira seu nome.')
-            return
-        }
+        // if($('#contact_name').hasClass('invalid')){
+        //     alert('Por favor, insira seu nome.')
+        //     return
+        // }
         if($('#contact_email').hasClass('invalid')){
             alert('Por favor, insira um email válido.')
             return
