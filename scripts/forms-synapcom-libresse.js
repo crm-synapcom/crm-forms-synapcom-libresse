@@ -47,7 +47,7 @@ $(document).ready(function() {
             for (i in pairs) {
                 var keyval = pairs[i].split("=");
                 if (sessionStorage.getItem(keyval[0]) === null) {
-                sessionStorage.setItem(keyval[0], decodeURIComponent(keyval[1]));
+                    sessionStorage.setItem(keyval[0], decodeURIComponent(keyval[1]));
                 }
             }
         }
@@ -60,7 +60,7 @@ $(document).ready(function() {
             'utm_campaign': sessionStorage.getItem('utm_campaign') == null ? '' : sessionStorage.getItem('utm_campaign'),
             'utm_term': sessionStorage.getItem('utm_term') == null ? '' : sessionStorage.getItem('utm_term'),
             'utm_content': sessionStorage.getItem('utm_content') == null ? '' : sessionStorage.getItem('utm_content'),
-            'privacy_policy':''
+            'privacy_policy':'https://1.libresse.com.br/informacoes-uteis#politicas-de-privacidade'
         }
 
         $.ajax({
